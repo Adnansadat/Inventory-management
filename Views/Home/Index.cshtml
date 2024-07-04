@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/site.css" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Welcome to Adnan's Inventory</h1>
+            <p>Your one-stop solution for managing equipment and member assignments.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box">
+                <h2>Equipments</h2>
+                <p>Manage all your equipments in one place.</p>
+                <a href="@Url.Action("Index", "Inventory")">View Equipments</a>
+                <a href="#">Add Equipment</a>
+                <a href="#">Update Equipment</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <h2>Members</h2>
+                <p>Keep track of all your members.</p>
+                <a href="@Url.Action("Index", "Inventory")">View Members</a>
+                <a href="#">Add Member</a>
+                <a href="#">Update Member</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <h2>Assignments</h2>
+                <p>Assign equipments to members easily.</p>
+                <a href="@Url.Action("Index", "Inventory")">View Assignments</a>
+                <a href="#">Add Assignment</a>
+                <a href="#">Update Assignment</a>
+            </div>
+        </div>
+    </div>
+</div>
